@@ -150,6 +150,23 @@ h1 em, h2 span, .download-section em { font-style: normal; color: var(--accent);
 .tool-card-featured .card-footer { color: var(--accent); }
 .card-footer span + span::before { content: '·'; color: var(--line); margin-right: 13px; }
 
+.product-preview { display: grid; grid-template-columns: minmax(270px, .8fr) 1.2fr; align-items: center; gap: clamp(55px, 8vw, 125px); padding-bottom: 158px; }
+.preview-media { min-height: 545px; position: relative; display: grid; place-items: center; background: #202523; border: 1px solid #202523; clip-path: polygon(0 0, 92% 0, 100% 8%, 100% 100%, 8% 100%, 0 92%); box-shadow: 12px 13px 0 var(--paper-deep); overflow: hidden; }
+.preview-media::before { content: ''; position: absolute; inset: 0; opacity: .42; background: linear-gradient(rgba(229,184,62,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(229,184,62,.09) 1px, transparent 1px); background-size: 38px 38px; }
+.preview-media-label, .preview-open { position: absolute; z-index: 1; color: #aab2a6; font: 9px var(--display); letter-spacing: .08em; }
+.preview-media-label { left: 27px; top: 24px; color: var(--accent); }
+.preview-open { right: 26px; bottom: 22px; }
+.phone-shot { position: relative; display: block; width: min(61%, 305px); padding: 8px; border-radius: 27px; background: #101313; box-shadow: 12px 16px 0 rgba(0,0,0,.25); transform: rotate(3deg); transition: transform .3s ease; }
+.preview-media:hover .phone-shot { transform: rotate(0deg) translateY(-8px); }
+.phone-shot img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.product-preview-copy h2 { font-size: clamp(46px, 5vw, 72px); margin: 24px 0 25px; }
+.product-preview-copy p { max-width: 500px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.preview-points { max-width: 500px; border-top: 1px solid var(--line); margin: 35px 0 31px; }
+.preview-points div { display: grid; grid-template-columns: 28px 1fr; gap: 4px 12px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.preview-points span { color: #aa7d1b; font: 9px var(--display); }
+.preview-points strong { font-size: 13px; }
+.preview-points small { grid-column: 2; color: var(--muted); font-size: 11px; }
+
 .workflow-section { padding-bottom: 158px; }
 .workflow-header { display: grid; grid-template-columns: 1.3fr .7fr; gap: 40px; align-items: end; margin-bottom: 54px; }
 .workflow-header p { justify-self: end; }
@@ -236,6 +253,7 @@ h1 em, h2 span, .download-section em { font-style: normal; color: var(--accent);
   .hero-stage { min-height: 465px; padding: 24px; clip-path: polygon(0 0, 91% 0, 100% 8%, 100% 100%, 8% 100%, 0 92%); }.meter-console { top: 112px; left: 7%; width: 86%; }.stage-note { bottom: 43px; }.note-b { display: none; }.stage-coordinates { top: 69px; right: 25px; }.orbit-one { width: 300px; right: -120px; }
   .signal-strip { grid-template-columns: 1fr 1fr 1fr; gap: 17px 0; padding-block: 22px; }.signal-intro { grid-column: 1 / -1; }.signal-stat { padding-left: 10px; }.signal-stat:first-of-type { border-left: 0; padding-left: 0; }.signal-stat strong { font-size: 22px; }.signal-stat span { display: none; }.signal-tail { display: none; }
   .tools-section { padding-block: 105px 115px; }.section-heading { display: block; margin-bottom: 38px; }.section-heading h2 { margin: 24px 0 25px; }.section-heading p { max-width: 360px; }.tool-grid { grid-template-columns: 1fr; }.tool-card { min-height: 285px; }.card-icon { margin-block: 27px 20px; }
+  .product-preview { display: block; padding-bottom: 110px; }.preview-media { min-height: 520px; }.phone-shot { width: min(68%, 290px); }.product-preview-copy { margin-top: 72px; }.product-preview-copy h2 { font-size: 48px; }.product-preview-copy p { font-size: 13px; }.preview-points { margin-top: 31px; }
   .workflow-section { padding-bottom: 110px; }.workflow-header { display: block; margin-bottom: 35px; }.workflow-header h2 { margin: 24px 0; }.workflow-header p { justify-self: auto; }.workflow-console { grid-template-columns: 1fr; box-shadow: 8px 9px 0 #d8d1c2; }.console-rail { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; border-right: 0; border-bottom: 1px solid var(--line-dark); }.rail-title, .rail-bottom { display: none; }.workflow-tab { display: block; padding: 16px 9px; border-left: 0; border-bottom: 3px solid transparent; }.workflow-tab span, .workflow-tab small { display: block; }.workflow-tab b { display: block; font-size: 13px; margin-top: 5px; }.workflow-tab:hover, .workflow-tab.is-active { border-left: 0; border-bottom-color: var(--accent); }.workflow-main { padding: 25px 20px 20px; }.workflow-main-top { align-items: flex-start; }.workflow-state { text-align: right; }.workflow-content { display: flex; flex-direction: column; align-items: stretch; gap: 34px; padding-block: 38px; }.workflow-copy h3 { font-size: 42px; }.workflow-copy p { font-size: 13px; margin-block: 19px 24px; }.workflow-visual { width: 100%; min-height: 250px; justify-self: auto; }.workflow-bottom { align-items: flex-start; line-height: 1.6; }.workflow-bottom span:last-child { text-align: right; max-width: 100px; }
   .privacy-section { padding-bottom: 110px; }.privacy-plate { display: block; padding: 50px 29px; clip-path: polygon(0 0, 95% 0, 100% 8%, 100% 100%, 5% 100%, 0 92%); }.privacy-mark { width: 116px; height: 116px; margin-bottom: 43px; }.privacy-mark span { font-size: 45px; }.privacy-mark i { width: 11px; height: 11px; top: 3px; left: 52px; }.privacy-copy h2 { font-size: 48px; }.privacy-copy p { font-size: 13px; }.privacy-list { margin-top: 47px; }.privacy-list div { padding-block: 16px; }
   .download-section { padding-bottom: 115px; }.download-section h2 { font-size: clamp(50px, 15vw, 78px); }.footer { display: block; padding-block: 28px; }.footer p { margin: 22px 0; }.footer-links { justify-content: flex-start; flex-wrap: wrap; gap: 12px 18px; }
