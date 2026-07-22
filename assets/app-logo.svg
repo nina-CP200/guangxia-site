@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">光匣</title>
+  <desc id="desc">A film frame and exposure dial</desc>
+  <rect width="128" height="128" rx="22" fill="#101313"/>
+  <path d="M29 20h67v14H42v45h41v14H29z" fill="#f0ece2"/>
+  <path d="M31 20h65v14H42v45h37" fill="none" stroke="#f0ece2" stroke-width="3"/>
+  <circle cx="88" cy="82" r="28" fill="none" stroke="#e5b83e" stroke-width="7" stroke-dasharray="86 44" transform="rotate(-28 88 82)"/>
+  <path d="m76 74 31 17-24-2z" fill="#e5b83e"/>
+  <g fill="#101313">
+    <rect x="35" y="25" width="12" height="10" rx="3"/><rect x="55" y="25" width="12" height="10" rx="3"/><rect x="75" y="25" width="12" height="10" rx="3"/>
+    <rect x="35" y="83" width="12" height="10" rx="3"/><rect x="55" y="83" width="12" height="10" rx="3"/>
+  </g>
+</svg>
