@@ -55,7 +55,9 @@ button { font: inherit; }
 .eyebrow-mark { display: inline-block; width: 26px; height: 3px; background: var(--accent); }
 h1, h2, h3, p { margin: 0; }
 h1, h2 { font-weight: 700; letter-spacing: -.07em; line-height: .96; }
-h1 { font-size: clamp(58px, 7vw, 104px); margin: 30px 0 30px; max-width: 700px; }
+h1 { font-size: clamp(50px, 5.4vw, 78px); margin: 30px 0 30px; max-width: 700px; }
+h1 span, h1 em { display: block; white-space: nowrap; }
+h1 { letter-spacing: -.03em; }
 h1 em, h2 span, .download-section em { font-style: normal; color: var(--accent); }
 .hero-lede { color: var(--ink-soft); font-size: 17px; line-height: 1.75; max-width: 450px; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 40px; }
@@ -112,15 +114,15 @@ h1 em, h2 span, .download-section em { font-style: normal; color: var(--accent);
 .workflow-tab:hover, .workflow-tab.is-active { background: rgba(229,184,62,.08); color: var(--paper); border-left-color: var(--accent); }
 .workflow-tab.is-active b { color: var(--paper); }
 .rail-dot { width: 7px; height: 7px; display: inline-block; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(229,184,62,.18); }
-.workflow-main { position: relative; padding: 32px 38px 26px; overflow: hidden; }
+.workflow-main { position: relative; padding: 24px 28px 20px; overflow: hidden; }
 .workflow-main::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(240,236,226,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(240,236,226,.04) 1px, transparent 1px); background-size: 56px 56px; pointer-events: none; }
-.workflow-content { position: relative; display: grid; grid-template-columns: .72fr 1.28fr; align-items: center; gap: 34px; min-height: clamp(360px, 36vw, 430px); }
+.workflow-content { position: relative; display: grid; grid-template-columns: .72fr 1.28fr; align-items: center; gap: 24px; min-height: clamp(330px, 32vw, 390px); }
 .workflow-copy h3 { max-width: 380px; font-size: clamp(35px, 4vw, 59px); line-height: .98; letter-spacing: -.07em; }
 .workflow-copy p { max-width: 365px; color: #a8b0a6; line-height: 1.85; font-size: 14px; margin: 24px 0 31px; }
 .workflow-copy .text-link { color: var(--paper); border-color: var(--paper); }
 .workflow-copy .text-link:hover { color: var(--accent); border-color: var(--accent); }
-.workflow-visual { position: relative; width: 100%; min-height: 0; aspect-ratio: 1.1; max-width: none; justify-self: end; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; border: 0; background: transparent; }
-.workflow-screen { display: block; width: auto; height: auto; max-width: min(78%, 430px); max-height: calc(100% - 34px); object-fit: contain; object-position: center bottom; border-radius: 26px; box-shadow: none; transition: none; }
+.workflow-visual { position: relative; width: 100%; min-height: 0; aspect-ratio: 1.16; max-width: none; justify-self: end; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; border: 0; background: transparent; }
+.workflow-screen { display: block; width: auto; height: auto; max-width: min(84%, 460px); max-height: calc(100% - 20px); object-fit: contain; object-position: center bottom; border-radius: 16px; overflow: hidden; box-shadow: none; transition: none; }
 .privacy-section { padding-bottom: 160px; }
 .privacy-plate { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 80px; min-height: 390px; background: var(--ink); color: var(--paper); padding: 58px 68px; clip-path: polygon(0 0, 98% 0, 100% 18%, 100% 100%, 2% 100%, 0 80%); }
 .privacy-copy .heading-index { color: #929b91; }
@@ -155,9 +157,9 @@ h1 em, h2 span, .download-section em { font-style: normal; color: var(--accent);
   .topbar-actions { margin-left: auto; }.menu-toggle { display: grid; gap: 5px; border: 0; background: transparent; padding: 10px 0 10px 10px; cursor: pointer; }.menu-toggle span { width: 25px; height: 1px; background: var(--ink); transition: transform .2s ease; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }.menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3px) rotate(-45deg); }
   .mobile-nav { position: absolute; left: 0; right: 0; top: 73px; display: grid; gap: 0; max-height: 0; overflow: hidden; background: var(--paper); border-bottom: 1px solid transparent; transition: max-height .35s ease, border-color .35s ease; }.mobile-nav.is-open { max-height: 240px; border-color: var(--line); }.mobile-nav a { padding: 17px 0; border-top: 1px solid var(--line); font: 11px var(--display); letter-spacing: .06em; text-transform: uppercase; }
-  .hero { min-height: 0; padding-block: 68px 82px; }.hero h1 { font-size: clamp(54px, 16vw, 82px); }.hero-lede { font-size: 15px; }.hero-facts { margin-top: 48px; gap: 18px 24px; }.hero-facts div { min-width: 105px; }
+  .hero { min-height: 0; padding-block: 68px 82px; }.hero h1 { font-size: clamp(34px, 10vw, 58px); }.hero-lede { font-size: 15px; }.hero-facts { margin-top: 48px; gap: 18px 24px; }.hero-facts div { min-width: 105px; }
   .hero-stage { min-height: 465px; padding: 24px; clip-path: polygon(0 0, 91% 0, 100% 8%, 100% 100%, 8% 100%, 0 92%); }.meter-console-real { top: 90px; left: 24%; width: 52%; }.stage-note { bottom: 43px; }.note-b { display: none; }
-  .workflow-section { padding-bottom: 110px; }.workflow-header { display: block; margin-bottom: 35px; }.workflow-header h2 { margin: 24px 0; }.workflow-header p { justify-self: auto; }.workflow-console { grid-template-columns: 1fr; box-shadow: 8px 9px 0 #d8d1c2; }.console-rail { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; border-right: 0; border-bottom: 1px solid var(--line-dark); }.workflow-tab { display: flex; justify-content: center; padding: 16px 9px; border-left: 0; border-bottom: 3px solid transparent; }.workflow-tab b { display: block; font-size: 13px; margin-top: 0; }.workflow-tab:hover, .workflow-tab.is-active { border-left: 0; border-bottom-color: var(--accent); }.workflow-main { padding: 25px 20px 20px; }.workflow-content { display: flex; flex-direction: column; align-items: stretch; gap: 34px; padding-block: 38px; min-height: 0; }.workflow-copy h3 { font-size: 42px; }.workflow-copy p { font-size: 13px; margin-block: 19px 24px; }.workflow-visual { width: 100%; min-height: 0; aspect-ratio: 1.08; max-width: none; justify-self: auto; }.workflow-screen { max-width: min(82%, 430px); max-height: calc(100% - 26px); }
+  .workflow-section { padding-bottom: 110px; }.workflow-header { display: block; margin-bottom: 35px; }.workflow-header h2 { margin: 24px 0; }.workflow-header p { justify-self: auto; }.workflow-console { grid-template-columns: 1fr; box-shadow: 8px 9px 0 #d8d1c2; }.console-rail { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; border-right: 0; border-bottom: 1px solid var(--line-dark); }.workflow-tab { display: flex; justify-content: center; padding: 16px 9px; border-left: 0; border-bottom: 3px solid transparent; }.workflow-tab b { display: block; font-size: 13px; margin-top: 0; }.workflow-tab:hover, .workflow-tab.is-active { border-left: 0; border-bottom-color: var(--accent); }.workflow-main { padding: 20px 16px 16px; min-height: 0; }.workflow-content { display: block; height: clamp(580px, 140vw, 700px); min-height: 0; padding: 28px 0 0; }.workflow-copy { position: relative; z-index: 1; max-width: 92%; }.workflow-copy h3 { font-size: 42px; }.workflow-copy p { font-size: 13px; margin-block: 17px 21px; }.workflow-visual { position: absolute; inset: 230px 0 0; width: auto; height: auto; min-height: 0; aspect-ratio: auto; max-width: none; justify-self: auto; }.workflow-screen { max-width: min(86%, 440px); max-height: calc(100% - 14px); border-radius: 16px; }
   .privacy-section { padding-bottom: 110px; }.privacy-plate { display: block; padding: 50px 29px; clip-path: polygon(0 0, 95% 0, 100% 8%, 100% 100%, 5% 100%, 0 92%); }.privacy-copy h2 { font-size: 48px; }.privacy-copy p { font-size: 13px; }.privacy-list { margin-top: 47px; }.privacy-list div { padding-block: 16px; }
   .download-section { padding-bottom: 115px; }.download-section h2 { font-size: clamp(50px, 15vw, 78px); }.footer { display: block; padding-block: 28px; }.footer p { margin: 22px 0; }.footer-links { justify-content: flex-start; flex-wrap: wrap; gap: 12px 18px; }
 }
